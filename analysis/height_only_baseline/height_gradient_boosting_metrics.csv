@@ -1,0 +1,3 @@
+﻿feature,pca,model,split,n_samples,accuracy,balanced_accuracy,macro_f1,macro_precision,macro_recall
+Height,No_PCA,Gradient_boosting,cross_validation,400,0.91,0.9099999999999999,0.9092421208633548,0.9094189801426644,0.9099999999999999
+Height,No_PCA,Gradient_boosting,independent_test_final,400,0.9175,0.9175,0.9165766654356918,0.919448959568891,0.9175

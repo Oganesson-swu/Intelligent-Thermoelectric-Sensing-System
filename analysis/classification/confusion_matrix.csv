@@ -1,0 +1,5 @@
+﻿,Predicted_Cyclohexane,Predicted_Dichloromethane,Predicted_Ethanol,Predicted_Water
+Actual_Cyclohexane,100,0,0,0
+Actual_Dichloromethane,0,98,1,1
+Actual_Ethanol,1,2,97,0
+Actual_Water,0,0,0,100

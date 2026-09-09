@@ -1,0 +1,3 @@
+﻿split,n_samples,accuracy,balanced_accuracy,macro_f1
+validation,400,0.975,0.975,0.9750723838611832
+independent_test,400,0.9875,0.9875,0.9874619327604401

@@ -1,0 +1,18 @@
+{
+  "threshold_A": 0.095,
+  "threshold_B": 0.015,
+  "valid_physical_pair": true,
+  "n": 2500,
+  "predicted_leakage": 1977.0,
+  "predicted_no_leakage": 523.0,
+  "no_leakage_between_A_B": 523.0,
+  "accuracy": 0.9748,
+  "precision": 0.9898836621143147,
+  "recall": 0.9785,
+  "f1": 0.984158913754086,
+  "tn": 480.0,
+  "fp": 20.0,
+  "fn": 43.0,
+  "tp": 1957.0,
+  "balanced_accuracy": 0.96925
+}

@@ -1,0 +1,9 @@
+﻿model,split,accuracy,balanced_accuracy,macro_f1
+Logistic_regression,validation,0.7725,0.7725,0.7663314132494591
+Logistic_regression,independent_test,0.77,0.7700000000000001,0.7686490119453452
+SVC_RBF,validation,0.8675,0.8674999999999999,0.867439341230795
+SVC_RBF,independent_test,0.885,0.885,0.8857841466909119
+Random_forest,validation,0.985,0.985,0.9850709186047648
+Random_forest,independent_test,0.9875,0.9875,0.987499623096638
+Gradient_boosting,validation,0.975,0.975,0.9750723838611832
+Gradient_boosting,independent_test,0.9875,0.9875,0.9874619327604401
