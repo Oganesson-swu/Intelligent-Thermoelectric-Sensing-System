@@ -1,6 +1,6 @@
 # Machine learning enabled thermoelectric leakage monitoring
 
-This repository contains the Python code used for event-level dual-threshold leakage detection, feature-based liquid classification and learning-curve analysis. Peak features were extracted separately with the Peak Analyzer in OriginPro 2024. The private voltage-time data are not included.
+This repository contains the Python code used for event-level dual-threshold leakage detection, feature-based liquid classification and learning-curve analysis. Peak features were extracted separately with the Peak Analyzer in OriginPro 2024. 
 
 ## Data
 
@@ -27,9 +27,6 @@ python code/scan_dual_thresholds.py \
   --outdir analysis/threshold
 python code/baseline_denoising.py
 ```
-
-The baseline script runs only a synthetic demonstration without an input file.
-Private raw voltage-time curves are not required for that demonstration and are not distributed in this repository.
 
 The dual-threshold scan treats a sample as no leakage only when it remains strictly between the thresholds, i.e. `threshold_B < min_voltage` and `max_voltage < threshold_A`. Candidate pairs are scanned every 0.01 V, and the `A <= B` region is retained as masked/invalid cells in the heatmap. The best pair is selected using the training plus validation data; the independent test split is used only for the final report.
 
