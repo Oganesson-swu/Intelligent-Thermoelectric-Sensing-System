@@ -32,7 +32,7 @@ The dual-threshold scan treats a sample as no leakage only when it remains stric
 
 ## Final classifier
 
-The final liquid classifier uses all five features without PCA and a `GradientBoostingClassifier` with 150 estimators, learning rate 0.05, maximum tree depth 2 and random seed 2026. StandardScaler is fitted within a pipeline.
+The final liquid classifier uses all five features with a `GradientBoostingClassifier` with 150 estimators, learning rate 0.05, maximum tree depth 2 and random seed 2026. StandardScaler is fitted within a pipeline.
 The no-leakage class is used for threshold evaluation but is not a liquid class in the four-class classifier.
 
 ## Outputs
