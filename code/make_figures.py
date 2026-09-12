@@ -9,9 +9,9 @@ import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
 def main():
     p=argparse.ArgumentParser(); p.add_argument("--outdir",type=Path,required=True); a=p.parse_args(); a.outdir.mkdir(parents=True,exist_ok=True)
-    comp=ROOT/"analysis"/"model_comparison"/"model_comparison_no_pca.csv"
+    comp=ROOT/"analysis"/"model_comparison"/"model_comparison.csv"
     if comp.exists():
-        d=pd.read_csv(comp); q=d[d.split=="independent_test"].sort_values("accuracy"); fig,ax=plt.subplots(figsize=(8,4),dpi=200); ax.barh(q.model,q.accuracy,color="#4c78a8"); ax.set_xlim(0,1); ax.set_xlabel("Independent-test accuracy"); ax.set_title("Candidate classifiers without PCA"); fig.tight_layout(); fig.savefig(a.outdir/"model_comparison_accuracy.png",bbox_inches="tight"); plt.close(fig)
+        d=pd.read_csv(comp); q=d[d["split"]=="independent_test"].sort_values("balanced_accuracy"); fig,ax=plt.subplots(figsize=(8,4),dpi=200); ax.barh(q["model"],q["balanced_accuracy"],color="#4c78a8"); ax.set_xlim(0,1); ax.set_xlabel("Independent-test balanced accuracy"); ax.set_title("Nine-classifier comparison using all five features"); fig.tight_layout(); fig.savefig(a.outdir/"model_comparison_accuracy.png",bbox_inches="tight"); plt.close(fig)
     lc=ROOT/"analysis"/"learning_curve"/"learning_curve.png"
     if lc.exists(): shutil.copy2(lc,a.outdir/"learning_curve.png")
     demo=ROOT/"analysis"/"baseline_example"/"demo_baseline.png"
